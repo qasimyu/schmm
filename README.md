@@ -50,8 +50,9 @@ wigToBigWig ./testData/refs/example_36.wig ./testData/refs/example.sizes ./testD
 ```
 
 For human genomes, we provide SNP files in the [snp](testData/snps/) subdirectory of the SCHMM software package. 
-For other genomes, users can download the SNP data from [UCSC genome browser](https://genome.ucsc.edu/cgi-bin/hgTables). The following filtering rules should be used:
+For other genomes, users can download the SNP data from [UCSC genome browser](https://genome.ucsc.edu/cgi-bin/hgTables). The following filtering rules should be used:  
 `#filter: valid != 'unknown' and molType = 'genomic' and class = 'single' and locType = 'exact'`
+
 The downloaded SNP data should be further processed to only remain “chrom” and “chromEnd” fields.
 
 The all arguments of the “schmm prepareinputs” command are as follows:
