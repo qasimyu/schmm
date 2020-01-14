@@ -90,7 +90,7 @@ Parameter | Description | Possible values
 -t, --threads | number of threads to use | Ex: threads=5  default:1
 -o, --output | output directory to save results | Ex: /path/to/results
 
-Examples:
+Example:
 
 ```
 gzip -cd ./testData/exampleInputs/example.txt.gz > ./testData/exampleInputs/example.txt
