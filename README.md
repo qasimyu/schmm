@@ -39,7 +39,7 @@ Mappability files formatted as .bw for human genomes are available from [UCSC ge
 Users can also generate their own mappability files using [gem-library](https://sourceforge.net/projects/gemlibrary/files/gem-library/Binary%20pre-release%203/) and [wigToBigWig](http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/) utility.
 
 Here is an example for creating mappability file from reference sequence 
-(suppose “gemlibrary” and “bigwig” are the directories where gem-library and wigToBigWig are installed, respectively).
+(suppose “$gemlibrary” and “$bigwig” are the pathes where gem-library and wigToBigWig are installed, respectively).
 ```
 chmod +x $gemlibrary/bin/gem* $bigwig/wigToBigWig
 export PATH=$PATH:$gemlibrary/bin:$bigwig
@@ -77,7 +77,9 @@ schmm prepareinputs -b example.bam -r hg19.fasta -m hg19.bw -s hg19.snp151.chr.p
 
 ### Step 2: detect and visualize CNAs
 
-The “schmm callcnas” command is designed to call and visualize CNAs from single tumor cell. The arguments of the command are as follows:
+The “schmm callcnas” command is designed to call and visualize CNAs from single tumor cell. 
+If MATLAB Compiler Runtime (MCR) is installed in user's machine, SCHMM will plot segmentation results of each chromosome. 
+The arguments of the command are as follows:
 
 Parameter | Description | Possible values
 ---- | ----- | ------
