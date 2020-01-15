@@ -46,7 +46,13 @@ void InputParser::parseArgs(int argc, char *argv[]) {
 	realpath(binaryPath.c_str(), abs_path_buff);
 	string schmmPath = abs_path_buff;
 	int indx = schmmPath.rfind("bin");
-	schmmPath = schmmPath.substr(0, indx-1);
+	if(indx != string::npos) {
+		schmmPath = schmmPath.substr(0, indx-1);
+	}
+	else {
+		indx = schmmPath.rfind("/");
+		schmmPath = schmmPath.substr(0, indx);
+	}
 	//cerr << schmmPath << endl;
 	config.setStringPara("schmmPath", schmmPath);
 }

@@ -98,6 +98,7 @@ Example:
 
 ```
 gzip -cd ./testData/exampleInputs/example.txt.gz > ./testData/exampleInputs/example.txt
+mkdir results
 schmm callcnas -i ./testData/exampleInputs/example.txt -d 5 -p 2 -t 5 -o ./results
 ```
 
