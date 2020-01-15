@@ -79,6 +79,8 @@ schmm prepareinputs -b example.bam -r hg19.fasta -m hg19.bw -s hg19.snp151.chr.p
 
 The “schmm callcnas” command is designed to call and visualize CNAs from single tumor cell. 
 If MATLAB Compiler Runtime (MCR) is installed in user's machine, SCHMM will plot segmentation results of each chromosome. 
+The MCR can be download from [MathWorks Web site](https://www.mathworks.com/products/compiler/matlab-runtime.html). 
+
 The arguments of the command are as follows:
 
 Parameter | Description | Possible values
